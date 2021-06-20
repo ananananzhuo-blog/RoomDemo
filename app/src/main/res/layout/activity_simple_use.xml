@@ -5,16 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".simpleuse.SimpleUseActivity">
     <Button
-        android:id="@+id/btn_simpleuse_room"
+        android:id="@+id/btn_insert"
         android:layout_width="match_parent"
-        android:text="简单使用Room"
+        android:text="插入一条数据"
         android:layout_height="wrap_content"/>
     <Button
-        android:id="@+id/btn_operate_with_livedata"
+        android:id="@+id/btn_getall"
         android:layout_width="match_parent"
-        android:text="使用Livedata观察数据查询"
+        android:layout_height="wrap_content"
+        android:text="获取所有书并打印"/>
+    <TextView
+        android:id="@+id/tv_simpleuse"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
