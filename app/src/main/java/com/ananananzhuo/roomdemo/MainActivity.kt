@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.ananananzhuo.roomdemo.memorydatabasebuilder.MemoryDatabaseBuilderActivity
 import com.ananananzhuo.roomdemo.operatewithlivedata.OperateWithLivedataActivity
 import com.ananananzhuo.roomdemo.simpleuse.SimpleUseActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,6 +21,10 @@ class MainActivity : AppCompatActivity() {
 
         btn_operate_with_livedata.setOnClickListener {
             startActivity(Intent(this,OperateWithLivedataActivity::class.java))
+        }
+
+        btn_memory_database.setOnClickListener {
+            startActivity(Intent(this,MemoryDatabaseBuilderActivity::class.java))
         }
     }
 }

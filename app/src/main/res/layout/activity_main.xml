@@ -17,4 +17,10 @@
         android:layout_width="match_parent"
         android:text="使用Livedata观察数据查询"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_memory_database"
+        android:layout_width="match_parent"
+        android:text="inMemoryDatabaseBuilder方式获取数据库对象"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
