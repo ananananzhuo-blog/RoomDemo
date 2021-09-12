@@ -2,6 +2,9 @@ package com.ananananzhuo.roomdemo
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.ananananzhuo.roomdemo.embdded.Parent3
+import com.ananananzhuo.roomdemo.embdded.Parent3Sun3Dao
+import com.ananananzhuo.roomdemo.embdded.Sun3
 import com.ananananzhuo.roomdemo.relative.*
 import com.ananananzhuo.roomdemo.savelist.Book
 import com.ananananzhuo.roomdemo.savelist.Student
@@ -20,6 +23,7 @@ import com.ananananzhuo.roomdemo.simpleuse.GoodsDao
         Parent::class, Sun::class,
         Parent1::class, Sun1::class,
         Parent2::class, Sun2::class,
+        Parent3::class,Sun3::class
        ],
     version = 1,
     exportSchema = false
@@ -35,4 +39,5 @@ abstract class OurRoomDatabase : RoomDatabase() {
 
     abstract fun parent2AndSun2Dao(): Parent2AndSun2Dao
 
+    abstract fun parent3AndSun3Dao():Parent3Sun3Dao
 }

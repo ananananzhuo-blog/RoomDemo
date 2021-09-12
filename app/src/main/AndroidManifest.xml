@@ -25,6 +25,7 @@
         <activity android:name=".relative.OneToOneActivity"/>
         <activity android:name=".relative.OneToManyActivity"/>
         <activity android:name=".relative.ManyToManyActivity"/>
+        <activity android:name=".embdded.EmbddedActivity"/>
     </application>
 
 </manifest>

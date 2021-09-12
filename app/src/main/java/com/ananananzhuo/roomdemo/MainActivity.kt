@@ -8,6 +8,7 @@ import com.ananananzhuo.mvvm.activity.CustomAdapterActivity
 import com.ananananzhuo.mvvm.bean.bean.ItemData
 import com.ananananzhuo.mvvm.callback.CallData
 import com.ananananzhuo.mvvm.callback.Callback
+import com.ananananzhuo.roomdemo.embdded.EmbddedActivity
 import com.ananananzhuo.roomdemo.memorydatabasebuilder.MemoryDatabaseBuilderActivity
 import com.ananananzhuo.roomdemo.operatewithlivedata.OperateWithLivedataActivity
 import com.ananananzhuo.roomdemo.relative.ManyToManyActivity
@@ -64,6 +65,9 @@ class MainActivity : CustomAdapterActivity() {
         },
         ItemData(title = "Room数据关系do对多") {
             startActivity(Intent(this, ManyToManyActivity::class.java))
+        },
+        ItemData(title = "使用Embdded实现嵌套关系") {
+            startActivity(Intent(this, EmbddedActivity::class.java))
         },
     )
 
