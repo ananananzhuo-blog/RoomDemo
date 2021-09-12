@@ -3,7 +3,7 @@ package com.ananananzhuo.roomdemo.simpleuse
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.room.Room
-import com.ananananzhuo.roomdemo.GoodsDatabase
+import com.ananananzhuo.roomdemo.OurRoomDatabase
 import com.ananananzhuo.roomdemo.R
 import kotlinx.android.synthetic.main.activity_simple_use.*
 import kotlinx.coroutines.Dispatchers
@@ -17,7 +17,7 @@ class SimpleUseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_simple_use)
         val db =
-            Room.databaseBuilder(applicationContext, GoodsDatabase::class.java, "goods").build()
+            Room.databaseBuilder(applicationContext, OurRoomDatabase::class.java, "goods").build()
         btn_insert.setOnClickListener {
            GlobalScope.launch {
                db.goodsDao().insertAll(Goods("阿娜卡列尼亚"))

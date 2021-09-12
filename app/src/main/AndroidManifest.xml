@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDemo">
-        <activity android:name=".memorydatabasebuilder.MemoryDatabaseBuilderActivity"></activity>
+        <activity
+            android:name=".savelist.SaveListDataActivity"
+            android:exported="true" />
+        <activity android:name=".memorydatabasebuilder.MemoryDatabaseBuilderActivity" />
         <activity android:name=".operatewithlivedata.OperateWithLivedataActivity" />
         <activity android:name=".simpleuse.SimpleUseActivity" />
         <activity android:name=".MainActivity">
@@ -19,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".relative.OneToOneActivity"/>
+        <activity android:name=".relative.OneToManyActivity"/>
+        <activity android:name=".relative.ManyToManyActivity"/>
     </application>
 
 </manifest>

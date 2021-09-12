@@ -3,8 +3,7 @@ package com.ananananzhuo.roomdemo.memorydatabasebuilder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.room.Room
-import androidx.room.RoomDatabase
-import com.ananananzhuo.roomdemo.GoodsDatabase
+import com.ananananzhuo.roomdemo.OurRoomDatabase
 import com.ananananzhuo.roomdemo.R
 import com.ananananzhuo.roomdemo.simpleuse.Goods
 import kotlinx.android.synthetic.main.activity_memory_database_builder.*
@@ -19,7 +18,7 @@ class MemoryDatabaseBuilderActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_memory_database_builder)
-        val db = Room.inMemoryDatabaseBuilder(this, GoodsDatabase::class.java).build()
+        val db = Room.inMemoryDatabaseBuilder(this, OurRoomDatabase::class.java).build()
         btn_insert_memory.setOnClickListener {
             GlobalScope.launch {
                 db.goodsDao().insertAll(Goods("hello World"))
